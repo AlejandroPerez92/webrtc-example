@@ -1,0 +1,10 @@
+services:
+  nexus:
+    image: ghcr.io/gammazero/nexusd:latest
+    ports:
+      - '8088:8080'
+    volumes:
+      - ./nexus/:/etc/nexus/
+    command:
+      - '--c'
+      - '/etc/nexus/nexus.json'

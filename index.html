@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Client</title>
+
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+Client uuid<br />
+<textarea id="localUuid" readonly="readonly"></textarea> <br />
+<br />
+<br />
+
+Remote uuid<br />
+<textarea id="remoteUuid"></textarea> <br />
+<br />
+<br />
+
+Client Session Description<br />
+<textarea id="localSessionDescription" readonly="readonly"></textarea> <br />
+<br />
+<br />
+
+Remote Session Description<br />
+<textarea id="remoteSessionDescription" readonly="readonly"></textarea><br/>
+<button id="startSessionBtn">Start Session</button><br />
+
+<br />
+
+Message<br />
+<textarea id="message">This is my DataChannel message!</textarea> <br/>
+<button id="sendMessageBtn">Send Message</button> <br />
+
+<br />
+Logs<br />
+<div id="logs"></div>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
